@@ -70,6 +70,6 @@ net = trainNetwork(X_train, Y_train, layers, options);
 modelFilePath = 'hand_gesture_model.mat';  % 指定保存的文件名
 save(modelFilePath, 'net');  % 將訓練好的模型保存到文件中
 
-%https://www.kaggle.com/datasets/datamunge/sign-language-mnist/data資料集來源
+
 
 
