@@ -14,3 +14,8 @@
 
 ## Resource 
 - kaggle  [sign-language-mnist](https://www.kaggle.com/datasets/datamunge/sign-language-mnist/data資料集來源)
+
+## Origin data
+- 28 * 28 pixels
+
+
