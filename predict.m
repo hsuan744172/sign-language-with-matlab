@@ -24,7 +24,7 @@ randomIndices = randperm(size(X_test, 4), numSamples);  % 隨機選取索引
 % 預測和顯示結果
 YPred = classify(net, X_test(:, :, 1, randomIndices));
 accuracy = sum(YPred == Y_test(randomIndices)) / numel(randomIndices);
-disp(['Test Accuracy: ' num2str(accuracy * 100) '%'])
+
 
 % 定義數字到字母的映射
 labelMapping = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', ...
@@ -49,9 +49,9 @@ for i = 1:numSamples
     actualLabel = Y_test(randomIndices(i));  % 這裡是數字
     predictedLabel = YPred(i);  % 這裡是數字
     
-    % 確保使用 +1 來獲取對應的字母
-    actualLabelText = labelMapping{double(actualLabel)};  % +1 轉換為索引
-    predictedLabelText = labelMapping{double(predictedLabel)};  % +1 轉換為索引
+   
+    actualLabelText = labelMapping{double(actualLabel)};
+    predictedLabelText = labelMapping{double(predictedLabel)}; 
     
     titleText = ['Actual: ' actualLabelText, newline, 'Predicted: ' predictedLabelText];
     title(titleText, 'FontSize', 10, 'Interpreter', 'none');  % 調整字體大小
