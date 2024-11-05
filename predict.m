@@ -50,8 +50,8 @@ for i = 1:numSamples
     predictedLabel = YPred(i);  % 這裡是數字
     
     % 確保使用 +1 來獲取對應的字母
-    actualLabelText = labelMapping{double(actualLabel) + 1};  % +1 轉換為索引
-    predictedLabelText = labelMapping{double(predictedLabel) + 1};  % +1 轉換為索引
+    actualLabelText = labelMapping{double(actualLabel)};  % +1 轉換為索引
+    predictedLabelText = labelMapping{double(predictedLabel)};  % +1 轉換為索引
     
     titleText = ['Actual: ' actualLabelText, newline, 'Predicted: ' predictedLabelText];
     title(titleText, 'FontSize', 10, 'Interpreter', 'none');  % 調整字體大小
