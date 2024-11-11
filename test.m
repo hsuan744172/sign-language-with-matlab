@@ -1,4 +1,4 @@
-% 這個檔案用來顯示原圖大小
+% 這個檔案用來顯示CSV原圖大小
 % 設定測試檔案路徑
 testFilePath = 'sign_mnist_test.csv';
 
