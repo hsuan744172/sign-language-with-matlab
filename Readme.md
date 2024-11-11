@@ -6,7 +6,8 @@
 - Deep learning toolbox
 ## Steps
 - train model
-- use test dataset predict
+- evaluation
+- predict
 - use my image predict
 ## Dataset
 - Training Data: [sign_mnist_train.csv](/sign_mnist_train.csv)
