@@ -36,7 +36,7 @@ else
                     'U', 'V', 'W', 'X', 'Y'};
 
     % 獲取預測的標籤
-    predictedLabel = labelMapping{double(YPred)}; % +1 因為 MATLAB 的索引從 1 開始
+    predictedLabel = labelMapping{double(YPred)}; % 因為 MATLAB 的索引從 1 開始
 
     % 顯示原始圖片與預測結果
     figure;

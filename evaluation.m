@@ -30,11 +30,3 @@ randomIdx = randi(numel(Y_test));  % 隨機索引
 randomImage = X_test(:, :, :, randomIdx);  % 提取隨機圖像
 actualLabel = Y_test(randomIdx);  % 真實標籤
 predictedLabel = Y_pred(randomIdx);  % 預測標籤
-
-% 顯示隨機選取的圖像及預測結果
-figure;
-imshow(randomImage, []);
-title(['Actual: ' char(actualLabel) ', Predicted: ' char(predictedLabel)], ...
-      'FontSize', 14, 'Interpreter', 'none');
-
-%評估正確率和隨機抽一張圖測試
