@@ -1,0 +1,60 @@
+# MATLAB specific
+*.asv
+*.m~
+*.mex*
+*.mat
+slprj/
+sccprj/
+codegen/
+*.autosave
+*.slxc
+
+# MATLAB default autosave extension
+*.asv
+
+# MATLAB compiled files
+*.mldatx
+*.mlappinstall
+*.mltbx
+
+# Simulink Code Generation
+*.rtw
+*.slxc
+*.mexmaci64
+*.mexa64
+*.mexw64
+
+# MacOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDE specific
+*.idea/
+*.vscode/
+
+# Dataset files (if you don't want to track large data files)
+*.csv
+*.zip
